@@ -1,0 +1,5 @@
+hive_tar_path: "/data/download_tar"
+hive_tar_filename: "apache-hive-3.1.3-bin.tar.gz"
+postgresql_jar_filename: "postgresql-42.2.11.jar"
+work_dir: "/data/sy0218"
+play_book_dir: "/data/work/hive_3.1.3_auto_ansible"

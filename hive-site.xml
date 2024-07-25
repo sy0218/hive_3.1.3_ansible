@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+<value>jdbc:postgresql://192.168.56.10:5432/sy0218</value>
+        <description>metadata is stored in a SQL server</description>
+    </property>
+    <property>
+        <name>hive.metastore.db.type</name>
+<value>postgres</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+<value>org.postgresql.Driver</value>
+        <description>postgreSQL JDBC driver class</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+<value>hive</value>
+        <description>Username to use against metastore database</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+<value>hive0218</value>
+        <description>password to use against metastore database</description>
+    </property>
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+<value>/user/hive/warehouse</value>
+        <description>location warehouse</description>
+    </property>
+    <property>
+        <name>hive.execution.engine</name>
+<value>mr</value>
+    </property>
+    <property>
+        <name>hive.server2.transport.mode</name>
+        <value>binary</value>
+    </property>
+    <property>
+        <name>hive.server2.webui.port</name>
+        <value>0</value>
+    </property>
+    <property>
+        <name>hive.server2.enable.doAs</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>hive.vectorized.execution.enabled</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>mapreduce.input.fileinputformat.split.maxsize</name>
+        <value>64000000</value>
+    </property>
+    <property>
+        <name>hive.exec.max.dynamic.partitions</name>
+        <value>3000</value>
+    </property>
+    <property>
+        <name>hive.exec.max.dynamic.partitions.pernode</name>
+        <value>100</value>
+    </property>
+</configuration>
